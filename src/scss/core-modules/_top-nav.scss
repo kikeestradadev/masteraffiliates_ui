@@ -1,0 +1,135 @@
+.top-nav{
+	
+	width         	: 100%;
+	max-width: 1920px;
+	display 		: flex;
+	flex-direction: column;
+	z-index: 1;
+	&__social-container{
+		display: flex;
+		background:  linear-gradient(90deg, #FF3C3F 0%, #FFD84C 93.26%);
+		backdrop-filter: blur(5px);
+		height: 42px;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 80px;
+	}
+	&__social-content{
+		height: 42px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 500px;
+	}
+	&__social-menu{
+		margin: 0 !important;
+		padding: 0 !important;
+		list-style: none !important;
+		display: flex;
+		justify-content: space-between;
+		height: 18px;
+		width: 100px;
+	}
+	
+	&__phone{
+		color:#1A1A1A;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.24px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&__email{
+		color:#1A1A1A;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.24px;
+		text-transform: uppercase;
+		text-decoration: none
+	}
+	&__menu-container{
+		height: 79px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 80px;
+	}
+	&__menu{
+		margin: 0 !important;
+		list-style: none !important;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 15px !important;
+		height: 20px;
+	}
+	&__menu > li > a{
+		color: #FFF;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.24px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&__menu > li {
+		padding-right: 30px;
+	}
+	&__menu > li:last-child {
+		padding-right: 0;
+	}
+	&__btn-continer{
+		display: flex;
+		justify-content: space-between;
+		width: 220px;
+	}
+	&__btn-login{
+		width: 102px;
+		height: 39px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 1px solid white;
+	}
+	&__btn-join{
+		width: 102px;
+		height: 39px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #05FF00;
+		color: #1A1A1A;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&__btn-hamburguer{
+		@include from(l){
+			display: none;
+		}
+	}
+
+}
+body{
+	// background-color: red;
+}

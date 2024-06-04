@@ -1,9 +1,9 @@
 {
-	"name": "front-end-prepros-boilerplate",
+	"name": "masteraffiliates_ui",
 	"version": "1.0.0",
-	"description": "gh=pages link: https://kikeestradadev.github.io/front-end-prepros-boilerplate",
+	"description": "gh=pages link: https://kikeestradadev.github.io/masteraffiliates_ui",
 	"main": "index.js",
-	"homepage": "https://kikeestradadev.github.io/front-end-prepros-boilerplate/",
+	"homepage": "https://kikeestradadev.github.io/masteraffiliates_ui/",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"deploy": "gh-pages -d public"
@@ -13,12 +13,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kikeestradadev/front-end-prepros-boilerplate.git"
+		"url": "git+https://github.com/kikeestradadev/masteraffiliates_ui.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/kikeestradadev/front-end-prepros-boilerplate/issues"
+		"url": "https://github.com/kikeestradadev/masteraffiliates_ui/issues"
 	}
 }
