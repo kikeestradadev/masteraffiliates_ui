@@ -1,23 +1,26 @@
 div(class='main-footer__container')
-	div(class='main-footer__container-logo-container'): a(href="#"): img(src="images/logo_footer.svg", alt="") 
-	div(class='main-footer__container-grid')
-		div(class='main-footer__container-grid-item')
-			p(class='main-footer__disclaimer') Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet corporis dolorem illum accusamus repudiandae quo, inventore voluptatum. Id hic temporibus dolor asperiores quo repudiandae, dicta explicabo et ut vel.
+	img(src="images/footer-player.png", alt="player", class='main-footer__player')
+	div(class='main-footer__logo-container'): a(href="#"): img(src="images/logo_footer.svg", alt="logo", class='main-footer__logo') 
+	div(class='main-footer__container-grid ed-container')
+		div(class='main-footer__container-grid-item ed-item m-1-2 from-m lg-1-4')
+			p(class='main-footer__description') Welcome to Master Affiliates, one of the leading affiliate programs in the online sportsbook and casino industry. In just minutes, you can sign up and join to be an affiliate of one or all of our partners and start earning off of each customer you refer.
+		div(class='main-footer__container-grid-item lrp ed-item m-1-1 m-order-1')
 			ul(class='main-footer__social-menu')
 				-for(let i=1; i<=4; i++)
 					li: a(href="#"): img(src="images/fb_footer_ico.svg", alt="" width="18" height="18") 
-		div(class='main-footer__container-grid-item')
+		div(class='main-footer__container-grid-item lrp ed-item m-1-2 lg-1-4')
 			ul(class='main-footer__nav-pages')
 				-for(let i=1; i<=7; i++)
 					li(class='main-footer__nav-pages-li')
 						a(href="#", class='main-footer__nav-pages-anchor') Lorem, ipsum.
-		div(class='main-footer__container-grid-item')
-			span(class='main-footer__contact-title') Newsletter 
-			span(class='main-footer__contact-disclaimer') Enter your email to obtain all the news and information regarding your susbcription.
-			div(class='main-footer__input-container')
-				input(type="email", name="", class='main-footer__input', placeholder="Enter your e-mail")
-				a(href="#", class='main-footer__subscribe') subscribe
-	div(class='main-footer__container-copy')
+		div(class='main-footer__container-grid-item lrp ed-item m-1-2 lg-1-3')
+			div(class='main-footer__contact')
+				span(class='main-footer__contact-title') Newsletter 
+				span(class='main-footer__contact-disclaimer') Enter your email to obtain all the news and information regarding your susbcription.
+				div(class='main-footer__input-container')
+					input(type="email", name="", class='main-footer__input', placeholder="Enter your e-mail")
+					a(href="#", class='main-footer__subscribe') subscribe
+	div(class='main-footer__copy-container')
 		div(class='main-footer__container-copy-content')
 			span(class='main-footer__content-label') MASTER TECH VENTURES D.O.O &nbsp;&nbsp;&nbsp;&nbsp;
 				span Beograd, 11070, Serbia

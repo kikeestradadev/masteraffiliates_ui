@@ -1,17 +1,18 @@
 /*here start de website template core*/
 @import "./core/normalize.scss";
-@import "./core/functions";
-@import "./core/mixins";
-@import "./core/media-queries";
+$fractions : 1,2,3,4,5,6,7,8,9,10;
 $breakpoints 		:
 	(
-		s	: 0,
-		m	: 768px,
-		l	: 1024px,
-		lg	: 1440px,
-		xl	: 1600px,
-		xxl	: 1920px
+		s		: 0, 
+		sm		: 480px, 
+		m		: 768px,
+		l		: 1024px,
+		lg		: 1440px,
+		xl		: 1600px,
+		xxl		: 1800px, 
+		xxxl	: 4000px
 	);
+@import "./core/ed-grid/scss/ed-grid.scss"; 
 @import "./layout/layout.scss";
 @import "./layout/fonts.scss";
 @import "./core-modules/core-modules"; 
