@@ -96,10 +96,22 @@
 		}
 	}
 	&__menu-container{
+		@include fromTo(s,l){
+			border: 2px solid pink;
+			position: fixed;
+			width: 400px;
+			height: 100vh;
+			right: -400px;
+			top: 121px;
+			align-items: flex-start;
+			display: flex;
+			&.active{
+				right: 0;
+			}
+		}
 		display: none;
 		height: 79px;
-		// border: 1px solid white;
-		
+		// border: 1px solid white;		
 		align-items: center;
 		justify-content: center;
 		padding: 0 15px;
@@ -122,6 +134,12 @@
 			display: flex;
 		}
 	}
+	&__link {
+		@include fromTo(s,l){
+			width: 100%;
+			border: 1px solid white;
+		}
+	}
 	&__link > img{
 		width: 106px;
 		height: 27px;
@@ -130,7 +148,29 @@
 			height: 35px;
 		}
 	}
+
+	&__mobile-link > img{
+		width: 106px;
+		height: 27px;
+		@include from(l){
+			width: 192px;
+			height: 35px;
+		}
+	}
+	&__mobile-menu-content{
+		
+		// border: 1px solid white;
+		width: 100%;
+		max-width: 1440px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 1000;
+	}
 	&__menu-content{
+		@include fromTo(s,l){
+			flex-direction: column;
+		}
 		// border: 1px solid white;
 		width: 100%;
 		max-width: 1440px;
@@ -140,6 +180,12 @@
 		z-index: 100;
 	}
 	&__menu{
+		@include fromTo(s,l){
+			height: auto;
+			flex-direction: column;
+			width: 100%;
+			padding: 0 !important;
+		}
 		// border: 1px solid white;
 		margin: 0 !important;
 		list-style: none !important;
@@ -166,11 +212,20 @@
 		padding-right: 0;
 	}
 	&__btn-continer{
+		@include fromTo(s,l){
+			width: 100%;
+			// border: 1px solid white;
+			flex-direction: column-reverse;
+		}
 		display: flex;
 		justify-content: space-between;
 		width: 220px;
 	}
 	&__btn-login{
+		@include fromTo(s,l){
+			width: 100%;
+			margin-bottom: 15px;
+		}
 		width: 102px;
 		height: 39px;
 		display: flex;
@@ -187,6 +242,10 @@
 		border: 1px solid white;
 	}
 	&__btn-join{
+		@include fromTo(s,l){
+			width: 100%;
+			margin-bottom: 15px;
+		}
 		width: 102px;
 		height: 39px;
 		display: flex;
@@ -202,7 +261,9 @@
 		text-transform: uppercase;
 		text-decoration: none;
 	}
-	&__btn-hamburguer{
+	&__mobile-hamburguer{
+		cursor: pointer; 
+		z-index: 100000;
 		@include from(l){
 			display: none;
 		}

@@ -12,7 +12,7 @@
 	position: relative;
 	min-height: 480px;
 	flex-direction: column;
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 	padding-bottom: 100px;
 	@include from(l){
 		min-height: 800px;
@@ -174,7 +174,7 @@
 	justify-content: center;
 }
 &__container-copy-content{
-	border: 1px solid white;
+	// border: 1px solid white;
 	width: 100%;
 	max-width: 1440px;
 	display: flex;
@@ -196,9 +196,10 @@
 	}
 }
 &__container-copy-content{
-	border: 1px solid white;
+	// border: 1px solid white;
 	width: 100%;
 	max-width: 1440px;
+	margin:  0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
