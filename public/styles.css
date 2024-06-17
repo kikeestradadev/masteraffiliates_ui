@@ -12851,6 +12851,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+body.active {
+  overflow: hidden;
+}
 
 .main-wrapp {
   width: 100%;
@@ -13333,7 +13336,7 @@ ul li {
   max-width: 1440px;
   padding: 0 15px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .top-nav__social-content {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -13380,7 +13383,7 @@ ul li {
   text-decoration: none;
   margin: 0 15px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .top-nav__email {
     display: block;
   }
@@ -13427,26 +13430,51 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 15px;
   position: relative;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__menu-container {
-    border: 2px solid pink;
     position: fixed;
-    width: 400px;
-    height: 100vh;
-    right: -400px;
-    top: 121px;
+    width: 100%;
+    max-width: 480px;
+    right: -480px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
   }
   .top-nav__menu-container.active {
     right: 0;
+  }
+  .top-nav__menu-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#FF3C3F), color-stop(93.26%, #FFD84C));
+    background: linear-gradient(90deg, #FF3C3F 0%, #FFD84C 93.26%);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 479px) {
+  .top-nav__menu-container {
+    height: 100vh;
+    top: 0;
+    padding: 150px 15px 0 15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1439px) {
+  .top-nav__menu-container {
+    height: calc(100vh - 121px);
+    top: 121px;
+    padding: 40px 15px 0 15px;
   }
 }
 .top-nav__menu-container:before {
@@ -13467,19 +13495,21 @@ ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 15px 0 15px;
   }
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__link {
     width: 100%;
     border: 1px solid white;
+    display: none;
   }
 }
 .top-nav__link > img {
   width: 106px;
   height: 27px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .top-nav__link > img {
     width: 192px;
     height: 35px;
@@ -13489,7 +13519,7 @@ ul li {
   width: 106px;
   height: 27px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 480px) {
   .top-nav__mobile-link > img {
     width: 192px;
     height: 35px;
@@ -13523,7 +13553,7 @@ ul li {
           justify-content: space-between;
   z-index: 100;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__menu-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -13543,7 +13573,7 @@ ul li {
   padding: 0 15px !important;
   height: 20px;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__menu {
     height: auto;
     -webkit-box-orient: vertical;
@@ -13580,7 +13610,7 @@ ul li {
           justify-content: space-between;
   width: 220px;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__btn-continer {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -13611,7 +13641,7 @@ ul li {
   text-decoration: none;
   border: 1px solid white;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__btn-login {
     width: 100%;
     margin-bottom: 15px;
@@ -13639,7 +13669,7 @@ ul li {
   text-transform: uppercase;
   text-decoration: none;
 }
-@media screen and (min-width: 0) and (max-width: 1023px) {
+@media screen and (min-width: 0) and (max-width: 1439px) {
   .top-nav__btn-join {
     width: 100%;
     margin-bottom: 15px;
@@ -13649,7 +13679,7 @@ ul li {
   cursor: pointer;
   z-index: 100000;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .top-nav__mobile-hamburguer {
     display: none;
   }
