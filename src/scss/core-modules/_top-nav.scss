@@ -13,6 +13,7 @@
 		height: 42px;
 		align-items: center;
 		justify-content: center;
+		z-index: 3000;
 	}
 	&__social-content{
 		height: 42px;
@@ -23,7 +24,7 @@
 		max-width: 1440px;
 		// border: 2px solid red;
 		padding: 0 15px;
-		@include from(lg){
+		@include from(l){
 			justify-content: flex-end;
 		}
 	}
@@ -62,7 +63,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		margin:0 15px;
-		@include from(lg){
+		@include from(l){
 			display: block;
 		}
 
@@ -76,7 +77,7 @@
 		justify-content: center;
 		padding: 0 15px;
 		position: relative;
-		@include from(lg){
+		@include from(l){
 			display: none;
 		}
 		&:before{
@@ -95,14 +96,17 @@
 		}
 	}
 	&__menu-container{
-		@include fromTo(s,lg){
+		@include fromTo(s,l){
 			position: fixed;
 			width: 100%;
 			max-width: 480px;
 			right: -480px;
 			align-items: flex-start;
 			display: flex;
-			transition 		: right .5s;
+			transition 		: right .3s;
+			height: calc(100vh);
+			top: 0;
+			padding: 150px 15px 0 15px;
 			
 			&.active{
 				right: 0;
@@ -117,17 +121,6 @@
 				backdrop-filter: blur(5px);
 				z-index: 1000;
 			}
-			
-		}
-		@include fromTo(s,sm){
-			height: calc(100vh);
-			top: 0;
-			padding: 150px 15px 0 15px;
-		}
-		@include fromTo(sm,lg){
-			height: calc(100vh - 121px);
-			top: 121px;
-			padding: 40px 15px 0 15px;
 			
 		}
 		display: none;
@@ -151,13 +144,13 @@
 			opacity             : 1;
 			
 		}
-		@include from(lg){
+		@include from(l){
 			display: flex;
 			padding: 0 15px 0 15px;
 		}
 	}
 	&__link {
-		@include fromTo(s,lg){
+		@include fromTo(s,l){
 			width: 100%;
 			border: 1px solid white;
 			display: none;
@@ -166,7 +159,7 @@
 	&__link > img{
 		width: 106px;
 		height: 27px;
-		@include from(lg){
+		@include from(l){
 			width: 192px;
 			height: 35px;
 		}
@@ -188,7 +181,7 @@
 		z-index: 1000;
 	}
 	&__menu-content{
-		@include fromTo(s,lg){
+		@include fromTo(s,l){
 			flex-direction: column;
 		}
 		width: 100%;
@@ -199,7 +192,7 @@
 		z-index: 100;
 	}
 	&__menu{
-		@include fromTo(s,lg){
+		@include fromTo(s,l){
 			height: auto;
 			flex-direction: column;
 			width: 100%;
@@ -230,18 +223,35 @@
 		padding-right: 0;
 	}
 	&__btn-continer{
-		@include fromTo(s,lg){
-			width: 100%;
+		width: 100%;
+		@include fromTo(s,sm){			
 			flex-direction: column-reverse;
 		}
 		display: flex;
 		justify-content: space-between;
-		width: 220px;
+		@include from(l){
+			width: 220px;
+		}
 	}
 	&__btn-login{
-		@include fromTo(s,lg){
+		@include fromTo(s,sm){
 			width: 100%;
 			margin-bottom: 15px;
+		}
+		@include fromTo(sm,l){
+			margin-right: 15px;
+			margin-bottom: 15px;
+			text-decoration: none !important;
+		}
+		@include fromTo(s,l){
+			width: 100%;
+			margin-bottom: 15px;
+			border: none;
+			text-decoration: underline;
+			
+		}
+		@include from(sm){
+			border: 1px solid white;
 		}
 		width: 102px;
 		height: 39px;
@@ -256,10 +266,10 @@
 		line-height: normal;
 		text-transform: uppercase;
 		text-decoration: none;
-		border: 1px solid white;
+		
 	}
 	&__btn-join{
-		@include fromTo(s,lg){
+		@include fromTo(s,l){
 			width: 100%;
 			margin-bottom: 15px;
 		}
@@ -281,7 +291,12 @@
 	&__mobile-hamburguer{
 		cursor: pointer; 
 		z-index: 100000;
-		@include from(lg){
+		@include from(l){
+			display: none;
+		}
+	}
+	&__or-text{
+		@include from(sm){
 			display: none;
 		}
 	}

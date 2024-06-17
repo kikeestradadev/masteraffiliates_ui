@@ -1,10 +1,12 @@
+- let pages = ['partners', 'Products', 'FAQ T&C', 'Privacy policy', 'Contact' , 'blog']
+
 nav(class='top-nav')
 	div(class='top-nav__social-container')
 		div(class='top-nav__social-content')
 			a(href="#", class='top-nav__phone') 1-866-978-6867
 			a(href="#", class='top-nav__email') partners@masteraffiliates.eu 
 			ul(class='top-nav__social-menu')
-				-for(let i=1; i<=4; i++)
+				- for(let i=1; i<=4; i++)
 					li: a(href="#"): img(src="images/fb.svg", alt="" width="18" height="18") 
 	div(class='top-nav__nav-bar-mobile')
 		div(class='top-nav__mobile-menu-content')
@@ -14,10 +16,10 @@ nav(class='top-nav')
 		div(class='top-nav__menu-content')
 			a(href='./', class='top-nav__link'): img(src="images/logo.svg", alt="")
 			ul(class='top-nav__menu')
-				-for(let i=1; i<=6; i++)
-					li(class='top-nav__li'): a(href='./', class='top-nav__anchor') Privacy policy
+				each page in pages
+					li(class='top-nav__li'): a(href='./', class='top-nav__anchor')= page
 			div(class='top-nav__btn-continer')
-				a(href="#", class='top-nav__btn-login') Login
-				a(href="#", class='top-nav__btn-join') Join Now 
-
-
+				a(href="#", class='top-nav__btn-login')
+					span(class='top-nav__or-text') OR&nbsp; 
+					| Login
+				a(href="#", class='top-nav__btn-join') Join Now
