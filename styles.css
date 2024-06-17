@@ -13702,6 +13702,15 @@ ul li {
     display: none;
   }
 }
+.top-nav__hamburguer-open.active {
+  display: none;
+}
+.top-nav__hamburguer-close {
+  display: none;
+}
+.top-nav__hamburguer-close.active {
+  display: block;
+}
 
 /*here finish de website template core*/
 /*here start de website internal components modules*/
