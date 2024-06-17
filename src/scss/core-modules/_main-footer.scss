@@ -25,6 +25,7 @@
 		bottom: 0;
 		background:  linear-gradient(90deg, #FF3C3F 0%, #FFD84C 93.26%);
 		backdrop-filter: blur(5px);
+		z-index: 3000;
 	}
 }
 &__logo-container{
