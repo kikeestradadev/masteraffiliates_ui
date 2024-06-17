@@ -8,13 +8,17 @@
 __webpack_require__.r(__webpack_exports__);
 var topNav = function topNav() {
   document.addEventListener('DOMContentLoaded', function () {
-    var hamburger = document.querySelector('.top-nav__mobile-hamburguer');
+    var hamburger = document.querySelector('.top-nav__hamburguer');
     var menuContainer = document.querySelector('.top-nav__menu-container');
+    var openMenu = document.querySelector('.top-nav__hamburguer-open');
+    var closeMenu = document.querySelector('.top-nav__hamburguer-close');
     var body = document.body;
     if (hamburger && menuContainer) {
       hamburger.addEventListener('click', function () {
         menuContainer.classList.toggle('active');
         body.classList.toggle('active');
+        openMenu.classList.toggle('active');
+        closeMenu.classList.toggle('active');
         console.log('Hamburger menu toggled');
       });
     } else {

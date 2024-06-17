@@ -300,5 +300,16 @@
 			display: none;
 		}
 	}
+	&__hamburguer-open{
+		&.active{
+			display: none;
+		}
+	}
+	&__hamburguer-close{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
 
 }

@@ -1,4 +1,4 @@
-- let pages = ['partners', 'Products', 'FAQ T&C', 'Privacy policy', 'Contact' , 'blog']
+- let pages = ['partners', 'Products', 'FAQ', 'T&C', 'Privacy policy', 'Contact' , 'blog']
 
 nav(class='top-nav')
 	div(class='top-nav__social-container')
@@ -11,7 +11,9 @@ nav(class='top-nav')
 	div(class='top-nav__nav-bar-mobile')
 		div(class='top-nav__mobile-menu-content')
 			a(href='./', class='top-nav__mobile-link'): img(src="images/logo.svg", alt="")
-			img(src="images/hamburguer.svg", alt="hamburguer", class='top-nav__mobile-hamburguer')
+			span(class='top-nav__hamburguer') 
+				img(src="images/hamburguer.svg", alt="hamburguer", class='top-nav__hamburguer-open')
+				img(src="images/hamburguer_x.svg", alt="hamburguer", class='top-nav__hamburguer-close')
 	div(class='top-nav__menu-container')
 		div(class='top-nav__menu-content')
 			a(href='./', class='top-nav__link'): img(src="images/logo.svg", alt="")
@@ -21,5 +23,5 @@ nav(class='top-nav')
 			div(class='top-nav__btn-continer')
 				a(href="#", class='top-nav__btn-login')
 					span(class='top-nav__or-text') OR&nbsp; 
-					| Login
+					| Log in
 				a(href="#", class='top-nav__btn-join') Join Now
