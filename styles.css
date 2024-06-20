@@ -12861,7 +12861,11 @@ body.active {
 }
 
 .main-header {
-  padding-top: 121px;
+  padding-top: 136px;
+}
+
+.main-container {
+  line-height: 0;
 }
 
 .main-footer {
@@ -14043,7 +14047,16 @@ ul li {
 /*here start small-size slider module styles*/
 .commission-slider-module {
   background-color: #1A1A1A;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .commission-slider-module {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .commission-slider {
@@ -14164,6 +14177,58 @@ ul li {
 }
 
 /*here finish small-size slider module styles*/
+.white-banner-left-player__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.white-banner-left-player__text-content {
+  width: 100%;
+}
+.white-banner-left-player__label-1 {
+  display: block;
+  width: 100%;
+  color: #4A4A4A;
+  /* Desktop/Labels/Label Display */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.white-banner-left-player__label-2 {
+  display: block;
+  padding-bottom: 40px;
+  width: 100%;
+  /* Desktop/Heading/Heading1 */
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.white-banner-left-player__label-3 {
+  display: block;
+  width: 100%;
+  color: #4A4A4A;
+  /* Desktop/Body/Regular/Body LG */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 .tp {

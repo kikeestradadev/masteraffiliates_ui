@@ -48,7 +48,7 @@ var commissionSlider = function commissionSlider() {
         allowThresholdMove: true,
         slidesPerView: 'auto',
         spaceBetween: 0
-      }, "spaceBetween", 7), "a11y", {
+      }, "spaceBetween", 10), "a11y", {
         enabled: true,
         slideLabelMessage: "Slide {{index}} of {{slidesLength}}",
         slideRole: null // Custom role for slide
