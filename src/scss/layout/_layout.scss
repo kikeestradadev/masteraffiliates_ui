@@ -26,9 +26,11 @@ body {
 	margin: 0 auto;
 }
 .main-header{
-	padding-top: 121px;
+	padding-top: 136px;
 }
-.main-container{}
+.main-container{
+	line-height: 0;
+}
 .main-footer {
 	position: relative;
 	@import "../core-modules/main-footer";
