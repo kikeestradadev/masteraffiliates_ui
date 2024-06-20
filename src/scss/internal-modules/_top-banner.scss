@@ -1,14 +1,12 @@
 .top-banner{
-	// background-image: url("images/bg.png");
+	margin: 0;
 	background-position: center center;
     background-repeat: no-repeat;
-    // background-attachment: fixed;
     background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 560px;
-		
+	height: 560px;		
 	padding: 121px 15px 0 15px;
 	position: relative;
 	&::before{

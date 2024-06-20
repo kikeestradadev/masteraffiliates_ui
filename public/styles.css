@@ -12861,7 +12861,7 @@ body.active {
 }
 
 .main-header {
-  padding-top: 136px;
+  padding-top: 120px;
 }
 
 .main-container {
@@ -13729,6 +13729,7 @@ ul li {
 }
 
 .top-banner {
+  margin: 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14227,6 +14228,134 @@ ul li {
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 32px */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+}
+.banner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30px;
+          flex: 1 1 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.banner__item:first-child {
+  background: hsl(80, 80%, 50%);
+}
+.banner__item:nth-child(2) {
+  background: hsl(180, 80%, 50%);
+}
+.banner__item:nth-child(3) {
+  background: hsl(270, 80%, 70%);
+}
+.banner__item:nth-child(4) {
+  background: hsl(320, 80%, 80%);
+}
+.banner__item:nth-child(5) {
+  background: hsl(0, 80%, 80%);
+}
+.banner__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.banner__card-container-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+.banner__card-container-info span {
+  font-size: 16px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.banner__card-container-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.banner__card-container-image img {
+  max-width: 150px;
+  width: 0px;
+  -webkit-filter: drop-shadow(1rem 5rem 20px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(1rem 5rem 20px rgba(0, 0, 0, 0.5));
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.banner__item:hover, .banner__item:focus {
+  -webkit-box-flex: 10;
+      -ms-flex: 10 0 auto;
+          flex: 10 0 auto;
+}
+.banner__card-container:hover .banner__card-container-info, .banner__card-container:focus .banner__card-container-info {
+  margin-top: -160px;
+  -webkit-transition: margin-top 0.3s;
+  transition: margin-top 0.3s;
+}
+.banner__card-container:hover .banner__card-container-image, .banner__card-container:focus .banner__card-container-image {
+  opacity: 1;
+}
+.banner__card-container:hover .banner__card-container-image img, .banner__card-container:focus .banner__card-container-image img {
+  width: 100%;
+}
+.banner__card-container:hover .banner__card-container-info span, .banner__card-container:focus .banner__card-container-info span {
+  -webkit-transform: none;
+          transform: none;
+  text-shadow: 9px 8px 4px rgba(0, 0, 0, 0.54);
+}
+@media screen and (min-width: 700px) {
+  .banner__card-container-image img {
+    max-width: 300px;
+  }
+  .banner__card-container-info span {
+    font-size: 24px;
+  }
+  .banner__card-container:hover .banner__card-container-info, .banner__card-container:focus .banner__card-container-info {
+    margin-top: -311px;
+    -webkit-transition: margin-top 0.3s;
+    transition: margin-top 0.3s;
+  }
 }
 
 /*here finish de website internal components modules*/
