@@ -1,0 +1,114 @@
+/*here start small-size slider module styles*/
+.commission-slider-module{
+	background-color: #1A1A1A;
+	padding: 80px 0;
+}
+.commission-slider{
+	width: 100%;
+	max-width: 1440px;
+}
+
+.commission-slider .swiper-wrapper{
+	align-items: baseline;
+	
+}
+
+.commission-slider{	
+	z-index								: 0;
+	&__item{
+		position						: relative;
+		width							: 240px;
+		height							: 205px;
+		overflow						: hidden;
+		text-decoration					: none;		
+		display							: flex;
+		flex-direction					: column;
+		align-items						: center;
+		justify-content					: space-evenly;
+		border: 1px solid #484646;
+		background: var(--DarkGradient, linear-gradient(180deg, #343434 0%, #171717 100%));
+		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+	}
+	&__text-container{
+		margin-bottom: 30px;
+	}
+	&__title{
+		color: white;
+		font-family: Inter;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.64px;
+
+	}
+	&__description{
+		color: white;
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 25.2px */
+
+	}
+	&__item-title{
+		color: white;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 0 15px;
+		font-family: Inter;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		letter-spacing: 1.32px;
+	}
+	&__item-players{
+		color: white;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 0 15px;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.84px;
+		text-transform: uppercase;
+	}
+	&__item-percentage{
+		color: white;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 0 15px;
+		font-family: Inter;
+		font-size: 64px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 60px; /* 93.75% */
+		letter-spacing: -3.84px;
+		background: var(--Gradient-Yellow, linear-gradient(90deg, #FFE81B 0%, #FFB11B 100%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__item-pay{
+		color: white;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 0 15px;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.84px;
+		text-transform: uppercase;
+	}
+	
+}
+/*here finish small-size slider module styles*/

@@ -1,5 +1,5 @@
 &__container{
-	background-image: url("images/bg_footer.png");
+	// background-image: url("images/bg_footer.png");
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,6 +198,7 @@
 }
 &__container-copy-content{
 	// border: 1px solid white;
+	padding: 0 15px;
 	width: 100%;
 	max-width: 1440px;
 	margin:  0 auto;

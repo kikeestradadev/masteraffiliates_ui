@@ -6,6 +6,7 @@
 	z-index			: 1;
 	position		: fixed;
 	z-index			: 2000;
+	top: 0;
 	&__social-container{
 		display: flex;
 		background:  linear-gradient(90deg, #FF3C3F 0%, #FFD84C 93.26%);
