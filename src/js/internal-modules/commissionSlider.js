@@ -9,7 +9,7 @@ const commissionSlider = () => {
 				allowThresholdMove: true,
 				slidesPerView: 'auto',
 				spaceBetween: 0,
-				spaceBetween: 7,
+				spaceBetween: 10,
 				a11y: {
                     enabled: true,
 					slideLabelMessage:"Slide {{index}} of {{slidesLength}}",

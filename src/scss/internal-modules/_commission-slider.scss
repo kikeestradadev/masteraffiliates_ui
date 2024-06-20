@@ -1,7 +1,14 @@
 /*here start small-size slider module styles*/
 .commission-slider-module{
 	background-color: #1A1A1A;
-	padding: 80px 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 15px;
+	padding-right: 15px;
+	@include from(lg){
+		padding-left: 0;
+	padding-right: 0;
+	}
 }
 .commission-slider{
 	width: 100%;
