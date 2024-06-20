@@ -3237,7 +3237,7 @@ body.desarrollo-hover .ed-grid > *:hover:before {
 .ed-grid.gap-4 {
   --gap: 2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .ed-grid {
     width: 100%;
     margin-left: auto;
@@ -12807,7 +12807,7 @@ ol ul {
   --vertical-block-space: 1rem;
   --vertical-content-space: 1rem;
   --gap: 1rem;
-  --max-width: 1200px;
+  --max-width: 1440px;
 }
 @media screen and (min-width: 1440px) {
   :root {
@@ -12860,12 +12860,15 @@ body.active {
   margin: 0 auto;
 }
 
+.main-header {
+  padding-top: 121px;
+}
+
 .main-footer {
   position: relative;
   /* Estilos para el placeholder */
 }
 .main-footer__container {
-  background-image: url("images/bg_footer.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13106,6 +13109,7 @@ body.active {
   }
 }
 .main-footer__container-copy-content {
+  padding: 0 15px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -13305,6 +13309,7 @@ ul li {
   z-index: 1;
   position: fixed;
   z-index: 2000;
+  top: 0;
 }
 .top-nav__social-container {
   display: -webkit-box;
@@ -13720,7 +13725,6 @@ ul li {
 }
 
 .top-banner {
-  background-image: url("images/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14036,6 +14040,130 @@ ul li {
   }
 }
 
+/*here start small-size slider module styles*/
+.commission-slider-module {
+  background-color: #1A1A1A;
+  padding: 80px 0;
+}
+
+.commission-slider {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.commission-slider .swiper-wrapper {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.commission-slider {
+  z-index: 0;
+}
+.commission-slider__item {
+  position: relative;
+  width: 240px;
+  height: 205px;
+  overflow: hidden;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #484646;
+  background: var(--DarkGradient, linear-gradient(180deg, #343434 0%, #171717 100%));
+  -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+}
+.commission-slider__text-container {
+  margin-bottom: 30px;
+}
+.commission-slider__title {
+  color: white;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.commission-slider__description {
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+}
+.commission-slider__item-title {
+  color: white;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.32px;
+}
+.commission-slider__item-players {
+  color: white;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.commission-slider__item-percentage {
+  color: white;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 93.75% */
+  letter-spacing: -3.84px;
+  background: var(--Gradient-Yellow, linear-gradient(90deg, #FFE81B 0%, #FFB11B 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.commission-slider__item-pay {
+  color: white;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+
+/*here finish small-size slider module styles*/
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 .tp {

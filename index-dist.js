@@ -28,6 +28,36 @@ var topNav = function topNav() {
 };
 /* harmony default export */ __webpack_exports__["default"] = (topNav);
 
+/***/ }),
+/* 2 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var commissionSlider = function commissionSlider() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var commissionSliderItem = document.querySelector('.commission-slider');
+    if (commissionSliderItem) {
+      var _commissionSlider = new Swiper('.commission-slider', _defineProperty(_defineProperty({
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        allowThresholdMove: true,
+        slidesPerView: 'auto',
+        spaceBetween: 0
+      }, "spaceBetween", 7), "a11y", {
+        enabled: true,
+        slideLabelMessage: "Slide {{index}} of {{slidesLength}}",
+        slideRole: null // Custom role for slide
+      }));
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (commissionSlider);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -73,24 +103,12 @@ var __webpack_exports__ = {};
 !function() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_modules_topNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/*here start core layout ui scripts imports*/
-// import coreModule from './core-modules/coreModule';
+/* harmony import */ var _internal_modules_commissionSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
-/*here finish core layout ui scripts imports*/
-
-/*here start internal layout ui components scripts imports*/
-// import internalModule from './internal-modules/internalModule';
-/*here finish internal layout ui components scripts imports*/
 
 (function () {
-  /*here start core layout ui scripts functions*/
-  // coreModule();
   (0,_core_modules_topNav__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  /*here finish core layout ui scripts functions*/
-})();
-(function () {
-  // internalModule();
-  console.log('Hola kike');
+  (0,_internal_modules_commissionSlider__WEBPACK_IMPORTED_MODULE_1__["default"])();
 })();
 }();
 /******/ })()
