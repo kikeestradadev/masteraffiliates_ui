@@ -14353,8 +14353,6 @@ ul li {
   background-color: #000000;
   opacity: 0.7;
   z-index: 1;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 .collapsed-animated-banner__item:nth-child(1) {
   background-image: url("images/vertical.png");
@@ -14382,8 +14380,8 @@ ul li {
 }
 .collapsed-animated-banner__item:hover, .collapsed-animated-banner__item:focus {
   -webkit-box-flex: 10;
-      -ms-flex: 10 0 auto;
-          flex: 10 0 auto;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
 }
 .collapsed-animated-banner__item:hover::before, .collapsed-animated-banner__item:focus::before {
   opacity: 0;
@@ -15018,6 +15016,43 @@ ul li {
 }
 
 /*here finish small-size slider module styles*/
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 50vh;
+}
+.banner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30px;
+          flex: 1 1 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.banner__item:nth-child(1) {
+  background: hsl(80, 80%, 50%);
+}
+.banner__item:nth-child(2) {
+  background: hsl(180, 80%, 50%);
+}
+.banner__item:nth-child(3) {
+  background: hsl(270, 80%, 70%);
+}
+.banner__item:nth-child(4) {
+  background: hsl(320, 80%, 80%);
+}
+.banner__item:hover, .banner__item:focus {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 .tp {
