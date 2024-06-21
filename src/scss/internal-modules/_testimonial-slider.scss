@@ -1,0 +1,181 @@
+.testimonial-slider-container{
+	margin: 0;
+}
+.testimonial-slider{	
+	padding								: 80px 15px; 
+	z-index								: 0;
+	margin: 0;
+	background-image: url('images/test_bg.png');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	@include from(m){
+		padding								: 150px 15px; 
+	}
+	&__item{
+		position						: relative;
+		width							: 100%;
+		// min-height						: 200px;
+		display							: flex;
+		justify-content					: center;
+	}
+	&__container{
+		// border: 1px solid red;
+		width: 100%;
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px 0;
+	}
+	&__top-label{
+		display: block;
+		width: 200px;
+		height: 29px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--Light-Color, #FFF);
+		/* Desktop/Labels/Label Hero */
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1.4px;
+		text-transform: uppercase;
+		background: var(--TextGradientLightMode1, linear-gradient(90deg, #FF5F2D 40.5%, #D40000 100%));
+		margin-bottom: 32px;
+	}
+	&__title{
+		color: var(--Dark-Back, #1A1A1A);
+		text-align: center;
+		/* Desktop/Heading/Heading1 */
+		font-family: Inter;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 50px;
+		letter-spacing: -0.96px;
+		margin-bottom: 10px;
+	}
+	&__sub-title{
+		color: var(--Text, #4A4A4A);
+		text-align: center;
+		/* Desktop/Body/Regular/Body LG */
+		font-family: Inter;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		margin-bottom: 40px;
+		@include from(m){
+			margin-bottom: 80px;
+		}
+	}
+	&__description{
+		color: var(--Dark-Back, #1A1A1A);
+		text-align: center;
+		/* Desktop/Display/Display Testimonials */
+		font-family: Inter;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.8px;
+		margin-bottom: 40px;
+		@include from(m){
+			font-size: 40px;
+		}
+	}
+	&__logo-container{
+		// border: 1px solid red;
+		width: 100%;
+		max-width: 400px;
+		min-height: 100px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding-left: 70px;
+		justify-content: center;
+		@include from(m){
+			padding-left: 100px;
+		}
+	}
+	&__logo{
+		position: absolute;
+		// border: 1px solid red;
+		width: 60px;
+		height: auto;
+		top: 50%;
+		left: 0;
+    	transform: translateY(-50%);
+		@include from(m){
+			width: 80px;
+			height: auto;
+		}
+	}
+	&__logo-title{
+		color: var(--Dark-Back, #1A1A1A);
+		/* Desktop/Body/Bold/Body LG */
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px;
+		@include from(m){
+			font-size: 18px;
+		}
+	}
+	&__logo-anchor{
+		color: var(--Text, #4A4A4A);
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+		@include from(m){
+			font-size: 18px;
+		}
+	}
+	&__buttons{
+		// border: 1px solid red;
+		width: 100%;
+		height: 40px;
+		position: relative;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	&__prev, &__next{
+		--swiper-navigation-size		: 20px;
+        background-color				: white;
+        height							: 43px;
+        width							: 124px;
+        margin-top						: -35px;
+		color							: black;
+		font-weight						: bold;
+		top: var(--swiper-navigation-top-offset, 94%);
+		background: var(--DarkGradient, linear-gradient(180deg, #343434 0%, #171717 100%));
+		color: #ffffff;
+	}
+	&__prev{
+        left							: 0;
+	}
+	&__prev::after{
+		position: absolute;
+        left							: 15px;
+	}
+	&__next{
+        right							: 0;
+		
+	}
+	&__next::after{
+		position: absolute;
+        right							: 15px;
+	}
+	.swiper-button-disabled{ 
+		opacity							: .3;
+		pointer-events					: initial;
+	}	
+}
+/*here finish small-size slider module styles*/

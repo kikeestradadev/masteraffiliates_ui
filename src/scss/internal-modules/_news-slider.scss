@@ -1,5 +1,6 @@
 /*here start small-size slider module styles*/
 .news-slider-module{	
+	margin: 0;
 	background-image: url('images/news_bg.png');
 	background-position: center center;
     background-repeat: no-repeat;
@@ -20,15 +21,13 @@
 
 .news-slider .swiper-wrapper{
 	align-items: baseline;
-	
 }
-
 .news-slider{	
 	z-index								: 0;
 	&__item{
 		position						: relative;
-		width							: 305px;
-		height							: 497px;
+		width							: 255px;
+		min-height						: 447px;
 		overflow						: hidden;
 		text-decoration					: none;		
 		display							: flex;
@@ -37,14 +36,17 @@
 		border: 1px solid #484646;
 		background: var(--DarkGradient, linear-gradient(180deg, #343434 0%, #171717 100%));
 		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+		@include from(sm){
+			width							: 305px;
+			min-height						: 497px;
+		}
 	}
-	
 	&__title{
 		color: var(--Light-Color, #FFF);
 		text-align: center;
 		/* Desktop/Heading/Heading1 */
 		font-family: Inter;
-		font-size: 48px;
+		font-size: 32px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
@@ -52,6 +54,9 @@
 		display: block;
 		text-align: center;
 		margin-bottom: 30px;
+		@include from(sm){
+			font-size: 48px;
+		}
 	}
 	&__text-container{
 		margin-bottom: 60px;
@@ -59,7 +64,6 @@
 	&__description{
 		color: #D2CBCB;
 		text-align: center;
-
 		/* Desktop/Body/Regular/Body MD */
 		font-family: Inter;
 		font-size: 18px;
@@ -78,20 +82,23 @@
 	&__image-container{
 		display: block;
 		width: 100%;
-		height: 300px;
+		height: 249px;
 		position: relative;
+		@include from(sm){
+			height: 300px;
+		}
 	}
 	&__image{
 		width: 100%;
 		height: auto;
 	}
 	&__item-text-container{
-		height: 195px;
+		min-height: 195px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
-		padding: 0 15px;
+		padding:15px;
 		width: 100%;
 		background-color: #1A1A1A;
 		
@@ -107,6 +114,7 @@
 		line-height: normal;
 		letter-spacing: 1.32px;
 		width: 100%;
+		margin:15px 0;
 	}
 	&__item-text{
 		display: block;
@@ -115,7 +123,6 @@
 		color: var(--Dark-Text, #C4C4C4);
 		text-overflow: ellipsis;
 		font-family: Inter;
-		font-size: 16px;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
@@ -131,7 +138,6 @@
 	&__cta{
 		display: block;
 		width: 100%;
-		max-width: 132px;
 		height: 39px;
 		display: flex;
 		align-items: center;
@@ -146,6 +152,9 @@
 		font-weight: 700;
 		line-height: normal;
 		text-transform: uppercase;
+		@include from(sm){
+			max-width: 132px;
+		}
 	}
 }
 /*here finish small-size slider module styles*/

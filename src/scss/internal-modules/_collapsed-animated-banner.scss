@@ -89,18 +89,21 @@
 			bottom: 0;
 			left: 0;
 			background-color: #000000;
-			opacity: 0.5;
+			opacity: 0.7;
 			z-index: -2;
 		}
 	}
 	&__title-text{
 		z-index: 1000;
 		font-family: Inter;
-		font-size: 48px;
+		font-size: 30px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
 		letter-spacing: -0.96px;
+		@include from(m){
+			font-size: 48px;
+		}
 	}
 	&__item:hover &__title-text,
 	&__item:focus &__title-text {
