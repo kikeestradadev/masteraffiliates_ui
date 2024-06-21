@@ -1,0 +1,29 @@
+.banner {
+	display: flex;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 50vh;
+
+	&__item {
+		display: flex;
+		flex: 1 1 30px;
+		transition: all 0.3s ease;
+		&:nth-child(1){
+			background: hsl(80, 80%, 50%);
+		}
+		&:nth-child(2){
+			background: hsl(180, 80%, 50%);
+		}
+		&:nth-child(3){
+			background: hsl(270, 80%, 70%);
+		}
+		&:nth-child(4){
+			background: hsl(320, 80%, 80%);
+		}
+		&:hover, &:focus {
+			flex-grow: 10;
+			// transform: scale(1.05);
+		}
+	}
+}
