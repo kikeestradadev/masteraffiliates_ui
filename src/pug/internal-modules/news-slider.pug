@@ -1,0 +1,15 @@
+section(class='news-slider-module')
+	div(class='ed-container news-slider__text-container')
+		span(class='ed-item news-slider__title') What's new?
+		span(class='ed-item news-slider__description') With decades of industry-leading experience, our dedicated team of veterans is committed to your success as an iGaming affiliate marketer. We provide expert guidance, proven strategies, personalized support, and valuable networking opportunities, ensuring you have the tools and knowledge to thrive in your affiliate journey.
+	div(class='swiper news-slider')
+		div(class='swiper-wrapper')
+			-for(let i = 1; i<=5; i++ )
+				div(class='swiper-slide news-slider__item')
+					div(class='news-slider__image-container')
+						img(src="images/news_img.png", class='news-slider__image', alt="")
+					div(class='news-slider__item-text-container')
+						span(class='news-slider__item-title') Generous Revenue Share Plans
+						span(class='news-slider__item-text') Generous Revenue Share Plans
+	div(class='news-slider__btn-container')
+			a(href="#", class='news-slider__cta') See all posts
