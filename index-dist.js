@@ -118,6 +118,42 @@ var newsSlider = function newsSlider() {
 };
 /* harmony default export */ __webpack_exports__["default"] = (newsSlider);
 
+/***/ }),
+/* 5 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var testimonialSlider = function testimonialSlider() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var testimonialSlider = document.querySelector('.testimonial-slider');
+    if (testimonialSlider) {
+      var _testimonialSlider = new Swiper('.testimonial-slider', {
+        // Optional parameters
+        effect: "fade",
+        speed: 800,
+        autoHeight: true,
+        fadeEffect: {
+          crossFade: true
+        },
+        watchOverflow: true,
+        pagination: {
+          el: ".swiper-pagination",
+          // type: "progressbar"
+          clickable: true
+          // dynamicBullets: true
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+        // Add init event	
+      });
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (testimonialSlider);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -166,6 +202,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _internal_modules_commissionSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _internal_modules_benefitsSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var _internal_modules_newsSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+/* harmony import */ var _internal_modules_testimonialSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
+
 
 
 
@@ -175,6 +213,7 @@ __webpack_require__.r(__webpack_exports__);
   (0,_internal_modules_commissionSlider__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_internal_modules_benefitsSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_internal_modules_newsSlider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_internal_modules_testimonialSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 })();
 }();
 /******/ })()
