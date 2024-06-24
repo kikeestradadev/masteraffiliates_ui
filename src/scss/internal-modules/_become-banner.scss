@@ -1,0 +1,67 @@
+.become-banner{
+	margin: 0;
+	background: #1A1A1A;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&__text-container{
+		// border: 1px solid white;s
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 15px;
+	}
+	&__title{
+		/* Desktop/Heading/Heading1 */
+		font-family: Inter;
+		font-size: 35px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.96px;
+		background: var(--Gradient-orange, linear-gradient(90deg, #FF3C3F 0%, #FFD84C 93.26%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: block;
+		text-align: center;
+		@include from(m){
+			font-size: 48px;
+		}
+	}
+	&__description{
+		color: var(--Light-Color, #FFF);
+		text-align: center;
+
+		/* Desktop/Body/Regular/Body LG */
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		@include from(m){
+			font-size: 20px;
+		}
+	}
+	&__cta{
+		display: block;
+		width: 200px;
+		height: 54px;
+		background: #05FF00;
+		color: var(--Dark-Back, #1A1A1A);
+		/* Desktop/CTA/CTA LG */
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.36px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

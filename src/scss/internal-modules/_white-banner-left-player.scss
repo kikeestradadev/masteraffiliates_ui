@@ -80,4 +80,22 @@
 			display: none;
 		}
 	}
+	&__cta{
+		width: 130px;
+		height: 46px;
+		border: 1px solid #0A0A0A;
+		background: #0A0A0A;
+		color: #FFF;
+		/* Desktop/CTA/CTA LG */
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.36px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

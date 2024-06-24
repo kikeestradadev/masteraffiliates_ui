@@ -1,0 +1,96 @@
+.top-banner-info{
+	margin: 0;
+	width: 100%;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	&__item:nth-child(2){
+		padding: 30px 15px; 
+		@include from(l){
+			padding: 0 15px; 
+		}
+	}
+	
+	&__text-container{
+		// border: 1px solid white;
+		min-height: 100px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		
+	}
+	&__title-1{
+		color: var(--Light-Color, #FFF);
+		font-family: Inter;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 100%; /* 83px */
+		letter-spacing: -1.66px;
+		@include from(sm){
+			font-size: 40px;
+		}
+		@include from(m){
+			font-size: 60px;
+		}
+		@include from(lg){
+			font-size: 83px;
+		}
+	}
+	&__title-2{
+		color: var(--Light-Color, #FFF);
+		font-family: Inter;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 100%; /* 83px */
+		letter-spacing: -1.66px;
+		background: var(--Gradient-Yellow, linear-gradient(90deg, #FFE81B 0%, #FFB11B 100%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include from(sm){
+			font-size: 40px;
+		}
+		@include from(m){
+			font-size: 60px;
+		}
+
+		@include from(lg){
+			font-size: 83px;
+		}
+	}
+	&__title-3{
+		color: #D9D9D9;
+		font-family: Inter;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 100%; /* 83px */
+		letter-spacing: -1.66px;
+		@include from(sm){
+			font-size: 40px;
+		}
+		@include from(m){
+			font-size: 60px;
+		}
+		@include from(lg){
+			font-size: 83px;
+		}
+	}
+	&__description{
+		color: var(--Light-Color, #FFF);
+		/* Desktop/Body/Regular/Body LG */
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		@include from(m){
+			font-size: 20px;
+		}
+	}
+}
