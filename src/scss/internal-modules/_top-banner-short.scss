@@ -5,6 +5,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-image: url('images/bg_container_3.png');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	&__text-container{
 		// border: 1px solid white;s
 		margin: 0 auto;
