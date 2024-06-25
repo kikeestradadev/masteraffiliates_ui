@@ -1,0 +1,102 @@
+.white-banner-right-player{
+	margin: 0;	
+	padding-bottom: 15px;
+	@include from(l){		
+		margin-top: 80px;
+	}
+	&__text-container{
+		// border: 1px solid black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		min-height: 100%;
+	}
+	&__text-content{
+		// border: 1px solid black;
+		width: 100%;
+	}
+	&__label-1{
+		display: block;
+		width: 100%;
+		color: #4A4A4A;
+		/* Desktop/Labels/Label Display */
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.84px;
+		text-transform: uppercase;
+		@include fromTo(s,l){
+			margin-top: 80px;
+		}
+	}
+	&__label-2{
+		display: block;
+		width: 100%;
+		/* Desktop/Heading/Heading1 */
+		font-family: Inter;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.96px;
+		background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include fromTo(s,l){
+			margin-bottom: 80px;
+		}
+		@include from(l){
+			margin-bottom: 40px;
+		}
+		@include from(lg){
+			font-size: 48px;
+		}
+	}
+	&__label-3{
+		display: block;
+		width: 100%;
+		color: #4A4A4A;
+		/* Desktop/Body/Regular/Body LG */
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		@include from(lg){
+			font-size: 20px;
+		}
+	}
+	&__player-dk{
+		display: none;
+		@include from(l){
+			display: block;
+		}
+	}
+	&__player-mb{
+		@include from(l){
+			display: none;
+		}
+	}
+	&__cta{
+		width: 130px;
+		height: 46px;
+		border: 1px solid #0A0A0A;
+		background: #0A0A0A;
+		color: #FFF;
+		/* Desktop/CTA/CTA LG */
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.36px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

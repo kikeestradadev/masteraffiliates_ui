@@ -1,0 +1,53 @@
+.top-banner-short{
+	margin: 0;
+	background: #1A1A1A;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&__text-container{
+		// border: 1px solid white;s
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 15px;
+	}
+	&__title{
+		/* Desktop/Heading/Heading1 */
+		color: var(--Light-Color, #FFF);
+		text-align: center;
+		font-family: Inter;
+		font-size: 83px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 100%; /* 83px */
+		letter-spacing: -1.66px;
+		display: block;
+		text-align: center;
+		@include from(m){
+			font-size: 48px;
+		}
+	}
+	&__sub-title{
+		color: var(--Light-Color, #FFF);
+		text-align: center;
+		font-family: Inter;
+		font-size: 83px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 100%; /* 83px */
+		letter-spacing: -1.66px;
+		background: var(--Gradient-Yellow, linear-gradient(90deg, #FFE81B 0%, #FFB11B 100%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: block;
+		text-align: center;
+		@include from(m){
+			font-size: 48px;
+		}
+	}
+	
+}
