@@ -12860,10 +12860,6 @@ body.active {
   margin: 0 auto;
 }
 
-.main-header {
-  padding-top: 120px;
-}
-
 .main-container {
   line-height: 0;
 }
@@ -14319,7 +14315,6 @@ ul li {
 }
 
 .collapsed-animated-banner {
-  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14327,6 +14322,7 @@ ul li {
   margin-left: auto;
   margin-right: auto;
   height: 500px;
+  margin-bottom: 0;
 }
 .collapsed-animated-banner__item {
   display: -webkit-box;
@@ -15537,7 +15533,7 @@ ul li {
           justify-content: center;
 }
 
-.casino-slider {
+.casino-section {
   margin: 0;
   min-height: 400px;
   display: -webkit-box;
@@ -15546,14 +15542,216 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.casino-slider__container {
-  border: 1px solid black;
+@media screen and (min-width: 1024px) {
+  .casino-section {
+    min-height: 800px;
+    background-image: url("images/casino_bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+.casino-section__container {
   min-height: 100px;
-  background-image: url("images/casino_bg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  min-height: 800px;
+}
+.casino-section__label-2 {
+  display: block;
+  width: 100%;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 0) and (max-width: 1023px) {
+  .casino-section__label-2 {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .casino-section__label-2 {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .casino-section__label-2 {
+    font-size: 48px;
+  }
+}
+.casino-section__label-3 {
+  display: block;
+  width: 100%;
+  color: #4A4A4A;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+@media screen and (min-width: 1440px) {
+  .casino-section__label-3 {
+    font-size: 20px;
+  }
+}
+.casino-section__cta {
+  width: 130px;
+  height: 46px;
+  border: 1px solid #0A0A0A;
+  background: #0A0A0A;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.casino-slider, .swiper-container {
+  margin-left: unset !important;
+}
+
+.casino-slider .swiper-wrapper {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 60px 0;
+}
+
+.casino-slider {
+  z-index: 0;
+}
+.casino-slider__item {
+  position: relative;
+  width: 112px;
+  height: 145px;
+  overflow: hidden;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid #484646;
+  background: var(--DarkGradient, linear-gradient(180deg, #343434 0%, #171717 100%));
+  -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+}
+.casino-slider__image-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 170px;
+}
+.casino-slider__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.casino-slider__item-text-container {
+  height: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  width: 100%;
+  border: 0.488px solid #448DFB;
+  background: var(--Gradient-Yellow, linear-gradient(90deg, #FFE81B 0%, #FFB11B 100%));
+  -webkit-backdrop-filter: blur(2.4375px);
+          backdrop-filter: blur(2.4375px);
+}
+.casino-slider__item-title {
+  color: var(--Dark-Back, #1A1A1A);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%; /* 15.84px */
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+.casino-slider__item-sub-title {
+  color: var(--Dark-Back, #1A1A1A);
+  text-align: center;
+  font-size: 6.825px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%; /* 9.009px */
+  letter-spacing: 1.365px;
+  text-transform: uppercase;
+}
+.casino-slider__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.casino-slider__cta {
+  display: block;
+  width: 100%;
+  max-width: 264px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #0A0A0A;
+  background: #0A0A0A;
+  color: white;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+@media screen and (min-width: 480px) {
+  .casino-slider__cta {
+    font-size: 18px;
+  }
 }
 
 /*here finish de website internal components modules*/

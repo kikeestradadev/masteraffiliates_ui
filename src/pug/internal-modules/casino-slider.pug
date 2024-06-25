@@ -1,4 +1,16 @@
-section(class='casino-slider')
-	div(class='casino-slider__container ed-container')
-		div(class='ed-item m-60') 
-			p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus harum eius et ipsum reprehenderit fuga voluptates sint, tempora, enim voluptatibus repellendus exercitationem culpa quam. Praesentium, corrupti. Nemo maxime quo ipsam?
+section(class='casino-section')
+	div(class='casino-section__container ed-container')
+		div(class='ed-item l-50 lg-60') 
+			span(class='casino-section__label-2') Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, perspiciatis!
+			p(class='casino-section__label-3') Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus cupiditate consectetur similique. Aliquid eligendi commodi omnis similique consequuntur veniam, nesciunt ex alias nisi. Maxime ut voluptatum error dolorum consequatur.
+			p(class='casino-section__label-3') Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus cupiditate consectetur similique. Aliquid eligendi commodi omnis similique consequuntur veniam, nesciunt ex alias nisi. Maxime ut voluptatum error dolorum consequatur.
+			a(href="#", class='casino-section__cta') lorem 
+			div(class='swiper casino-slider')
+				div(class='swiper-wrapper')
+					-for(let i = 1; i<=9; i++ )
+						div(class='swiper-slide casino-slider__item')
+							div(class='casino-slider__image-container')
+								img(src="images/casino-slider.png", class='casino-slider__image', alt="")
+							div(class='casino-slider__item-text-container')
+								span(class='casino-slider__item-title') Euro Live
+								span(class='casino-slider__item-sub-title') Euro Live
