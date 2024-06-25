@@ -13409,9 +13409,9 @@ ul li {
           justify-content: center;
   padding: 0 15px;
   position: relative;
-  background: rgba(0, 0, 0, 0.65);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   z-index: 50000;
 }
 @media screen and (min-width: 1024px) {
@@ -13429,9 +13429,9 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  background: rgba(0, 0, 0, 0.65);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 @media screen and (min-width: 0) and (max-width: 1023px) {
   .top-nav__menu-container {
@@ -13474,6 +13474,15 @@ ul li {
     display: flex;
     padding: 0 15px 0 15px;
   }
+}
+.top-nav__link {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 0) and (max-width: 1023px) {
   .top-nav__link {
@@ -13564,9 +13573,9 @@ ul li {
 .top-nav__menu > li > a {
   color: #FFF;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: -0.24px;
   text-transform: uppercase;
@@ -13722,6 +13731,32 @@ ul li {
   height: 560px;
   padding: 0 15px 0 15px;
   position: relative;
+}
+.top-banner::before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #000000), color-stop(5%, #000000), color-stop(50%, transparent));
+  background: linear-gradient(to bottom, #000000 5%, #000000 5%, transparent 50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+.top-banner::after {
+  content: "";
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000000), color-stop(5%, #000000), color-stop(50%, transparent));
+  background: linear-gradient(to top, #000000 5%, #000000 5%, transparent 50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .top-banner {
@@ -14222,7 +14257,7 @@ ul li {
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.84px;
   text-transform: uppercase;
@@ -14562,7 +14597,7 @@ ul li {
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.96px;
 }
@@ -14597,11 +14632,6 @@ ul li {
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 16px;
-}
-@media screen and (min-width: 480px) {
-  .benefits-slider__cta {
-    font-size: 18px;
-  }
 }
 
 /*here finish small-size slider module styles*/
@@ -15338,13 +15368,18 @@ ul li {
   color: var(--Light-Color, #FFF);
   text-align: center;
   font-family: Inter;
-  font-size: 83px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 83px */
   letter-spacing: -1.66px;
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .top-banner-short__title {
+    font-size: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .top-banner-short__title {
@@ -15355,7 +15390,7 @@ ul li {
   color: var(--Light-Color, #FFF);
   text-align: center;
   font-family: Inter;
-  font-size: 83px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 83px */
@@ -15366,6 +15401,11 @@ ul li {
   -webkit-text-fill-color: transparent;
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .top-banner-short__sub-title {
+    font-size: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .top-banner-short__sub-title {
@@ -15445,7 +15485,7 @@ ul li {
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.84px;
   text-transform: uppercase;
