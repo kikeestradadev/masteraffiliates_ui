@@ -15311,6 +15311,10 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("images/bg_container_3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .top-banner-short__text-container {
   margin: 0 auto;
