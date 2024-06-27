@@ -15796,6 +15796,64 @@ ul li {
   }
 }
 
+.text-grid {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .text-grid {
+    padding: 80px 0;
+  }
+}
+.text-grid__title {
+  /* Desktop/Heading/Heading1 */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  display: block;
+  background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 1024px) {
+  .text-grid__title {
+    font-size: 48px;
+  }
+}
+.text-grid__description {
+  color: var(--Text, #4A4A4A);
+  /* Desktop/Body/Regular/Body LG */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+@media screen and (min-width: 1024px) {
+  .text-grid__description {
+    padding: 80px 0;
+    font-size: 20px;
+  }
+}
+.text-grid__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-container__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 .tp {
