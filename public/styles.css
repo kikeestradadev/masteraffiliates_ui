@@ -16347,8 +16347,13 @@ ul li {
   margin-top: 30px;
 }
 .accordion-container__wrapp {
-  margin-bottom: 20px;
-  border: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: none;
+  border-left: 1px solid #dddddd;
+}
+.accordion-container__wrapp:last-child {
+  border-bottom: 1px solid #dddddd;
 }
 .accordion-container__btn-acc {
   position: relative;
@@ -16361,17 +16366,23 @@ ul li {
   text-align: left;
   outline: none;
   border-bottom: 1px solid #fff;
-  font: normal normal 600 15px/27px Poppins;
-  letter-spacing: -0.3px;
-  color: #1F2024;
+  color: var(--Text, #4A4A4A);
+  /* Desktop/Body/Bold/Body LG */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.accordion-container__btn-acc.active {
-  background-color: #f3f3f3;
+@media screen and (min-width: 768px) {
+  .accordion-container__btn-acc {
+    font-size: 18px;
+  }
 }
 .accordion-container__panel {
   padding: 0 15px;
   background-color: white;
-  font: normal normal bold 20px/15px Metropolis;
+  font: normal normal bold 20px/15px Inter;
   letter-spacing: 0px;
   color: #02263C;
   display: none;
@@ -16386,16 +16397,16 @@ ul li {
   content: "";
   width: 25px;
   height: 25px;
-  background-image: url("images/arrow-top.svg");
+  background-image: url("https://kikeestradadev.github.io/masteraffiliates_ui/images/arrow-top.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .accordion-container .active:after {
   content: "";
-  background-image: url("images/arrow-down.svg");
+  background-image: url("https://kikeestradadev.github.io/masteraffiliates_ui/images/arrow-down.svg");
 }
 .accordion-container__text {
-  font: normal normal medium 20px/26px Metropolis;
+  font: normal normal medium 20px/26px Inter;
   letter-spacing: 0px;
   color: #616161;
   margin: 0;

@@ -5,8 +5,13 @@
 .accordion-container{
 	margin-top					: 30px;
 	&__wrapp{
-		margin-bottom			: 20px;
-		border					: 1px solid #dddddd;
+		border-top					: 1px solid #dddddd;
+		border-right					: 1px solid #dddddd;
+		border-bottom					:none;
+		border-left					: 1px solid #dddddd;
+	}
+	&__wrapp:last-child{
+		border-bottom					:1px solid #dddddd;;
 	}
 	&__btn-acc {
 		position				: relative;
@@ -19,17 +24,25 @@
 		text-align				: left;
 		outline					: none;
 		border-bottom			: 1px solid #fff;
-		font					: normal normal 600 15px/27px Poppins;
-		letter-spacing			: -0.3px;
-		color					: #1F2024;
+		color: var(--Text, #4A4A4A);
+
+		/* Desktop/Body/Bold/Body LG */
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		@include from(m){
+			font-size: 18px;
+		}
 		&.active {
-            background-color	: #f3f3f3;
+            // background-color	: #f3f3f3;
         }
 	}  
 	&__panel {
 		padding					: 0 15px;
 		background-color		: white;
-		font					: normal normal bold 20px/15px Metropolis;
+		font					: normal normal bold 20px/15px Inter;
 		letter-spacing			: 0px;
 		color					: #02263C;
 		display					: none;
@@ -45,16 +58,16 @@
 		content					: "";
 		width					: 25px;
 		height					: 25px;
-		background-image		: url('images/arrow-top.svg');
+		background-image		: url('https://kikeestradadev.github.io/masteraffiliates_ui/images/arrow-top.svg');
 		background-size			: cover;
 		background-repeat		: no-repeat;
 	}  
 	.active:after {
 		content					: "";
-		background-image		: url('images/arrow-down.svg');
+		background-image		: url('https://kikeestradadev.github.io/masteraffiliates_ui/images/arrow-down.svg');
 	}
 	&__text{
-		font					: normal normal medium 20px/26px Metropolis;
+		font					: normal normal medium 20px/26px Inter;
 		letter-spacing			: 0px;
 		color					: #616161;
 		margin					: 0;
