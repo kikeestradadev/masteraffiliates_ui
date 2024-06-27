@@ -15849,6 +15849,50 @@ ul li {
   padding-bottom: 15px;
 }
 
+.lottery {
+  padding: 100px 0;
+  background: #E9E9E9;
+}
+.lottery__title {
+  /* Desktop/Heading/Heading1 */
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lottery__description {
+  color: var(--Text, #4A4A4A);
+  /* Desktop/Body/Regular/Body LG */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+.lottery__cards {
+  width: 100%;
+  max-width: 700px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .lottery__cards-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 .tp {
