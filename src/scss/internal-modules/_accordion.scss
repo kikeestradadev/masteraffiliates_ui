@@ -63,8 +63,16 @@
 		background-repeat		: no-repeat;
 	}  
 	.active:after {
+		position				: absolute;
+		top						: 15px;
+		right					: 20px;
 		content					: "";
+		width					: 25px;
+		height					: 25px;
 		background-image		: url('https://kikeestradadev.github.io/masteraffiliates_ui/images/arrow-down.svg');
+		background-size			: cover;
+		background-repeat		: no-repeat;
+		
 	}
 	&__text{
 		font					: normal normal medium 20px/26px Inter;
