@@ -1,0 +1,82 @@
+.terms-and-conditions-introduction{
+	margin: 0;
+	padding-top: 30px;
+	&__container{
+		display: block;
+		width: 100%;
+		max-width: 1120px;
+		margin: 0 auto;
+	}
+	&__title{
+		color: var(--Text, #4A4A4A);
+		/* Desktop/Heading/Heading1 */
+		font-family: Inter;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.96px;
+		display: block;
+		text-align: center;
+		@include from(m){
+			font-size: 48px;
+		}
+	}
+	&__description{
+		color: var(--Text, #4A4A4A);
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		@include from(m){
+			font-size:20px;
+		}
+	}
+	&__sub-title{
+		text-align: center;
+		/* Desktop/Heading/Heading1 */
+		font-family: Inter;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -0.96px;
+		background: var(--TextGradientDarkMode2, linear-gradient(90deg, #FF5F2D 0%, #D40000 100%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: block;
+		text-align: center;
+		@include from(m){
+			font-size: 48px;
+		}
+	}
+	&__person-image{
+		display: block;
+		width: 100%;
+		max-width: 700px;
+		height: auto;
+		margin: 0 auto;
+	}
+	&__list-container{
+		min-height: 100px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	&__list-item{
+		padding-right: 15px;
+		margin-bottom: 20px;
+		min-height: 30px;
+		color: var(--Text, #4A4A4A);
+		/* Desktop/Body/Regular/Body LG */
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 32px */
+		@include from(m){
+			font-size: 20px;
+		}
+	}	
+}

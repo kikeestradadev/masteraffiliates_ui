@@ -184,6 +184,34 @@ var casinoSlider = function casinoSlider() {
 };
 /* harmony default export */ __webpack_exports__["default"] = (casinoSlider);
 
+/***/ }),
+/* 7 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var accordion = function accordion() {
+  document.addEventListener("DOMContentLoaded", function () {
+    // Selecciona todos los botones de acordeón
+    var accordionButtons = document.querySelectorAll('.accordion-container__btn-acc');
+    // Verifica si hay botones de acordeón en la página
+    if (accordionButtons.length > 0) {
+      // Añade un evento de clic a cada botón
+      accordionButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          // Alterna la clase 'active' en el botón clickeado
+          this.classList.toggle('active');
+          // Obtiene el panel asociado al botón y alterna su clase 'active'
+          var panel = this.nextElementSibling;
+          if (panel) {
+            panel.classList.toggle('active');
+          }
+        });
+      });
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (accordion);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -234,6 +262,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _internal_modules_newsSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 /* harmony import */ var _internal_modules_testimonialSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
 /* harmony import */ var _internal_modules_casinoSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
+/* harmony import */ var _internal_modules_accordion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
+
 
 
 
@@ -247,6 +277,7 @@ __webpack_require__.r(__webpack_exports__);
   (0,_internal_modules_newsSlider__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_internal_modules_testimonialSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
   (0,_internal_modules_casinoSlider__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  (0,_internal_modules_accordion__WEBPACK_IMPORTED_MODULE_6__["default"])();
 })();
 }();
 /******/ })()

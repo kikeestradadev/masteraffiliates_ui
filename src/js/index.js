@@ -4,7 +4,7 @@ import benefitsSlider from './internal-modules/benefitsSlider';
 import newsSlider from './internal-modules/newsSlider';
 import testimonialSlider from './internal-modules/testimonialSlider'; 
 import casinoSlider from './internal-modules/casinoSlider'; 
-
+import accordion from './internal-modules/accordion';
 
 
 (() => {
@@ -14,5 +14,6 @@ import casinoSlider from './internal-modules/casinoSlider';
 	newsSlider();
 	testimonialSlider();
 	casinoSlider();
+	accordion();
 })();
 
