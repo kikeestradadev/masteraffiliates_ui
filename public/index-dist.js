@@ -108,7 +108,7 @@ var newsSlider = function newsSlider() {
         allowThresholdMove: true,
         slidesPerView: 'auto',
         spaceBetween: 0
-      }, "spaceBetween", 10), "a11y", {
+      }, "spaceBetween", 20), "a11y", {
         enabled: true,
         slideLabelMessage: "Slide {{index}} of {{slidesLength}}",
         slideRole: null // Custom role for slide

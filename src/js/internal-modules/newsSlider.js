@@ -9,7 +9,7 @@ const newsSlider = () => {
 				allowThresholdMove: true,
 				slidesPerView: 'auto',
 				spaceBetween: 0,
-				spaceBetween: 10,
+				spaceBetween: 20,
 				a11y: {
                     enabled: true,
 					slideLabelMessage:"Slide {{index}} of {{slidesLength}}",
