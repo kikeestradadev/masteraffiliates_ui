@@ -16349,9 +16349,7 @@ ul li {
 
 .accordion-container__wrapp {
   border-top: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
   border-bottom: none;
-  border-left: 1px solid #dddddd;
 }
 .accordion-container__wrapp:last-child {
   border-bottom: 1px solid #dddddd;

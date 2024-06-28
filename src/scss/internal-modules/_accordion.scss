@@ -8,9 +8,7 @@
 .accordion-container{
 	&__wrapp{
 		border-top					: 1px solid #dddddd;
-		border-right					: 1px solid #dddddd;
 		border-bottom					:none;
-		border-left					: 1px solid #dddddd;
 	}
 	&__wrapp:last-child{
 		border-bottom					:1px solid #dddddd;;
